@@ -10,7 +10,7 @@ class Page1 extends StatelessWidget {
     final pageController = Get.find<Page1Controller>();
     return Scaffold(
       appBar: AppBar(
-        title: Text("page 1"),
+        title:const Text("page 1"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -23,7 +23,7 @@ class Page1 extends StatelessWidget {
               onPressed: () {
                 pageController.increment();
               },
-              child: Text("increment"),
+              child:const Text("increment"),
             ),
           ),
           ElevatedButton(
@@ -35,7 +35,7 @@ class Page1 extends StatelessWidget {
               // Get.defaultDialog(title: "data");
               // print(Get.currentRoute);
             },
-            child: Text("go to page 2"),
+            child:const Text("go to page 2"),
           ),
         ],
       ),

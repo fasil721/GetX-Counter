@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: "/1",
-          page: () => Page1(),
+          page: () =>const Page1(),
           binding: PageBinding(),
         ),
         GetPage(
           name: "/2",
-          page: () => Page2(),
+          page: () =>const Page2(),
           binding: PageBinding(),
         ),
       ],

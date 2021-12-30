@@ -11,12 +11,12 @@ class Page2 extends StatelessWidget {
     final pageController = Get.find<Page1Controller>();
     return Scaffold(
       appBar: AppBar(
-        title: Text("page 2"),
+        title:const Text("page 2"),
         leading: IconButton(
           onPressed: () {
             Get.back();
           },
-          icon: Icon(Icons.arrow_back),
+          icon:const Icon(Icons.arrow_back),
         ),
       ),
       body: Column(
@@ -30,7 +30,7 @@ class Page2 extends StatelessWidget {
               onPressed: () {
                 pageController.increment();
               },
-              child: Text("increment"),
+              child:const Text("increment"),
             ),
           ),
         ],
